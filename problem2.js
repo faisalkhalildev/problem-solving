@@ -11,8 +11,13 @@ for(let i = 0; i < str.length; i++){
 }
  const strr = str2
  for(let j=0; j<strr.length; j++){
-    const catcheded = strr[i]
-    if(total[catcheded])
- }
+    let catcheded = strr[j]
+    if(total[catcheded]){
+        total[catcheded] -= 1
+    } else{
+      total[catcheded] = 1
+    }
+}
+console.log(total)
 }
 isSame("act" , "cat")
