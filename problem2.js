@@ -1,4 +1,7 @@
 function isSame(str1,str2){
+    if(str1.length !== str2.length){
+        return false
+    }
 const str = str1;
 const total = {}
 for(let i = 0; i < str.length; i++){
@@ -12,12 +15,12 @@ for(let i = 0; i < str.length; i++){
  const strr = str2
  for(let j=0; j<strr.length; j++){
     let catcheded = strr[j]
-    if(total[catcheded]){
-        total[catcheded] -= 1
+    if(!total[catcheded]){
+        return false
     } else{
-      total[catcheded] = 1
+      total[catcheded] -= 1
     }
 }
-console.log(total)
+  return true;
 }
-isSame("act" , "cat")
+isSame("act" , "cataaa")
