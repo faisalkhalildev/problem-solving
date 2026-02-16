@@ -1,4 +1,8 @@
 const n = 253875;
-while (n > 0){
-    Math.floor
+let temN = Math.abs(n)
+while (temN > 0){
+ let digit = temN % 10;
+ console.log('digit: ', digit);
+
+ temN = Math.floor(temN / 10)
 }
