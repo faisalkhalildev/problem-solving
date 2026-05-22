@@ -1,11 +1,10 @@
-const numbers = [0,1,0,2,3,4,45,5];
+const numbers = [0,1,0,2,3,4,45];
 
 let nums = numbers;
 
-for(let i=0; i < nums.length; i++){
-    let currentNo = nums[i]
-    if(currentNo === 0){
-        currentNo = nums - 1;
+for(let i=0; i <numbers.length; i++){
+    const first = nums[i]
+    for(let j=0; j<nums.length; j++){
+        console.log(nums[i])
     }
 }
-console.log(nums)
